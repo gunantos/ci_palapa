@@ -1,0 +1,141 @@
+#page-case-index {
+    .badge-status {
+      &.ongoing {
+        background-color: @brand-warning;
+      }
+    }
+}
+
+#page-case-sop {
+  .case-info {
+    table {
+      background-color: #fff;
+      td {
+        padding: 20px;
+      }
+    }
+    dl {margin-bottom: 0}
+    .action {
+      .btn {padding-right: 20px; padding-left: 20px}
+    }
+  }
+}
+
+#modalSelectCase {
+  .list-group {
+    .list-group-item {
+      .fa {
+        opacity: 0;
+      }
+      &.active {
+        .fa {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.box-tersangka {
+  .item {
+    .icon {
+      font-size: 2em;
+      float: left;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .name {
+      line-height: 2em;
+    }
+  }
+}
+.case-tracking {
+  .name {font-weight: 300; font-size: 1.3em}
+  .progress {
+    height: 15px;
+    cursor: pointer;
+  }
+  .progress-bar {
+    background-color: @gray-lighter;
+    border-right: 1px dotted @body-bg;
+  }
+  .progress-bar-success {background-color: @brand-success}
+  .progress-bar-warning {background-color: @brand-warning}
+  .progress-bar-danger {background-color: @brand-danger}
+  .progress-bar- {
+    &:last-child{
+      border-right: 0 none;
+    }
+  }
+}
+
+.modal-case-info {
+  .modal-body {padding: 0}
+  .modal-title {font-weight: 300; padding: 20px 25px}
+  .section-info {
+    dd {
+      margin-bottom: 15px;
+    }
+  }
+  .panel {margin-bottom: 0; border-top: 0 none}
+  .panel-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: lighten(@gray-light, 10%);
+    .icon {
+      margin-right: 10px;
+    }
+  }
+  .panel-tersangka {
+    .items {
+      .icon {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.list-case {
+  .item {
+    margin-bottom: 40px;
+
+    .name {font-size: 1.5em}
+  }
+  .box-progress {
+    border-top: 1px solid @gray-lighter;
+  }
+  .panel-footer {
+    .person {
+      font-size: .8em;
+    }
+  }
+}
+
+table.table-case-info {
+  tbody {
+    tr {
+      td {
+        @media (min-width: @screen-lg-min) {
+          font-size: .9em;
+          padding: 20px;
+        }
+        @media (min-width: @screen-md-min) {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+.panel-checklist {
+  .items {
+    .btn-danger {
+      font-size: .7em;
+    }
+    .btn-edit {
+      font-size: .8em;
+    }
+  }
+}

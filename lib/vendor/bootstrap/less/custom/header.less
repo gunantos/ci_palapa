@@ -1,0 +1,97 @@
+.navbar-header {
+  height: 100px;
+  padding: 15px 0;
+  margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid @gray-lighter;
+  background: #fff;
+
+  .logo{
+    width: 60px;
+    float: right;
+    margin-left: 30px;
+  }
+  h1 {
+    font-size: 22px;
+    color: #4A4A4A;
+    line-height: 42px;
+    font-weight: 600;
+    margin: 15px 0 5px;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: @gray-light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  .clock {
+    .block-date {
+      display: inline-block;
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 300;
+
+      .day{
+        font-size: 20px;
+        display: block;
+      }
+      .date {
+        color: @gray-light;
+      }
+    }
+    .time {
+      font-size: 3em;
+      line-height: 1em;
+      font-weight: 300;
+      display: inline-block;
+      margin-left: 30px;
+      width: 200px;
+      text-align: left;
+    }
+  }
+
+  .home {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .trails {
+    margin-top: 10px;
+  }
+  .trail {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 0 5px;
+    line-height: 2.6em;
+    color: lighten(@gray-light, 30%);
+    font-weight: 600;
+  }
+}
+
+.navbar-user {
+  border-bottom: 1px solid @gray-lighter;
+  background-color: lighten(@gray-lighter, 5%);
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+
+  .notification {
+    a{
+      font-size: .9em;
+      font-weight: 700;
+      color: @brand-success;
+      padding-right: 15px;
+      &.danger {
+        color: @brand-danger;
+        span {
+          border-bottom: 1px dotted @brand-danger;
+        }
+
+      }
+    }
+  }
+}
